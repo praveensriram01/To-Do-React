@@ -1,6 +1,6 @@
 import React from 'react'
 
-function todoist({todo}) {
+function todoist({todo, index, delTodo}) {
   return (
     <div className="todo">
         <div className="actions">
@@ -8,7 +8,7 @@ function todoist({todo}) {
         </div>
         <p>{todo}</p>
         <div className="actions">
-          <button>Delete</button>
+          <button onClick={() => delTodo(index)}>Delete</button>
         </div>
       </div>
   )

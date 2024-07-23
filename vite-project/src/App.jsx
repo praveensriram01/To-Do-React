@@ -13,10 +13,17 @@ function App() {
     console.log(e.target.value)
   }
 
+  function delTodo(todoindex) {
+    setTodos((prevTodo) => prevTodo.filter((prevTodo, prevTodoIndex) => {
+      return prevTodoIndex != todoindex
+    })
+  )}
+
   function addTodo() {
     setTodos((prevTodo) => [...prevTodo, inputVal])
     setInputVal('')
   }
+
 
   //console.log(todos)
 
@@ -25,7 +32,7 @@ function App() {
       <h1>To Do List</h1>
       <hr />
       <Inputing inputVal={inputVal} writeToDo={writeToDo} addTodo={addTodo}/>
-      <Todocont todo={todos}/>
+      <Todocont todos={todos} delTodo={delTodo}/>
 
     </main>
   )
