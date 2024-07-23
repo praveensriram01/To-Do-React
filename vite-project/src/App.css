@@ -1,0 +1,130 @@
+@font-face {
+  font-family: ubuntu;
+  src: url(./fonts/Ubuntu-R.woff);
+}
+
+@font-face {
+  font-family: ubuntuBold;
+  src: url(./fonts/Ubuntu-B.woff);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: lighter;
+  color: #242424;
+  background-color: #E4E2DD;
+}
+
+hr {
+  border: 0.5px solid #242424;
+}
+
+/* 
+#242424 - grey
+#DB4A2B - dark orange
+#E4E2DD - creamy white
+*/
+
+h1 {
+  font-family: ubuntuBold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.input-container > input {
+  width: 600px;
+  height: 60px;
+  font-size: 1.5em;
+  font-family: ubuntu;
+  /* margin-left: 10px; */
+  text-align: center;
+  /* border: 1px solid #DB4A2B; */
+  border: 0px;
+  margin: 2em;
+  border-radius: 10px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+}
+
+.input-container > button {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  font-family: ubuntu;
+  border-radius: 10px;
+  border: 0px;
+  /* border: 1px solid #DB4A2B; */
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+}
+
+.input-container > button:hover {
+  font-size: 2.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0px 10px 0px;
+}
+
+.todo {
+  background-color: #fff;
+  color: black;
+  width: 500px;
+  justify-content: space-between;
+  display: flex;
+  font-size: 1.2em;
+  font-family: ubuntu;
+  border: 0px solid #242424;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+}
+
+.todo > p {
+  width: 60%;
+}
+
+.todo > p:hover {
+  letter-spacing: 0.2px;
+}
+
+.actions > button {
+  width: 80px;
+  height: 30px;
+  color: #E4E2DD;
+  background-color: #242424;
+  border: 1px solid #242424;
+  border-radius: 5px;
+  margin: 1em;
+  font-family: ubuntu;
+  font-size: 0.8em;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+}
+
+.actions > button:hover {
+  letter-spacing: 0.5px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px); 
+}
+
+.actions > input {
+  margin: 1.5em 10px 1.5em 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #242424;
+}
